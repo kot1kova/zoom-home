@@ -1,0 +1,79 @@
+$index: calc(1vw + 1vh);
+
+$blue: #00d7d3;
+$white: #fff;
+$light: #fcfcfc;
+$body-color: #1d201f;
+
+$ff: 'Inter', serif;
+$fw-400: 400; /* reg */
+$fw-500: 500; /* med */
+$fw-700: 700; /* bold */
+
+$gr-black: linear-gradient(
+	180deg,
+	rgba(29, 32, 31, 1) 0%,
+	rgba(56, 59, 58, 1) 100%
+);
+
+$gr-bl: linear-gradient(
+	180deg,
+	rgba(0, 215, 211, 1) 31%,
+	rgba(0, 113, 111, 1) 100%
+);
+$shadow-80: 0px 0px 30px rgba(0, 0, 0, 0.8);
+$shadow-30: 0px 0px 30px rgba(65, 62, 62, 0.3);
+
+$fz-128: clamp(4rem, 2.5778rem + 7.1111vw, 8rem);
+$fz-96: clamp(2.5rem, 1.2556rem + 6.2222vw, 6rem);
+$fz-80: clamp(1.625rem, 0.425rem + 6vw, 5rem); /* 80-26 */
+$fz-64: clamp(2rem, 1.2889rem + 3.5556vw, 4rem);
+$fz-48: clamp(1rem, 0.2889rem + 3.5556vw, 3rem);
+$fz-48-title: clamp(1.5rem, 0.9667rem + 2.6667vw, 3rem);
+$fz-40: clamp(1rem, 0.4667rem + 2.6667vw, 2.5rem);
+$fz-24: clamp(0.875rem, 0.6528rem + 1.1111vw, 1.5rem); /* 24-14 */
+$fz-24-rev: clamp(0.75rem, 0.4833rem + 1.3333vw, 1.5rem); /* 24-12 */
+$fz-16: clamp(0.75rem, 0.6611rem + 0.4444vw, 1rem); /* 16-12 */
+// $fz-32: 2rem;
+// $fz-26: 1.625rem;
+// $fz-16: 1rem;
+// $fz-14: 0.875rem;
+// $fz-12: 0.75rem;
+body {
+	font-family: $ff;
+	color: $white;
+	background-color: $body-color;
+}
+
+.container {
+	max-width: 1240px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.h2-title {
+	color: $light;
+	font-size: $fz-96;
+	font-weight: $fw-700;
+	text-shadow: $shadow-30;
+	text-transform: uppercase;
+}
+
+.h3-title {
+	text-transform: uppercase;
+	font-size: $fz-48;
+	font-weight: $fw-700;
+}
+
+.h4-title {
+	text-transform: uppercase;
+	font-size: $fz-48-title;
+	font-weight: $fw-700;
+}
+.simple-text {
+	color: $white;
+	font-size: $fz-24;
+	font-weight: $fw-400;
+	line-height: 1.5;
+}
